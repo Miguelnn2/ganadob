@@ -1,0 +1,346 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Time;
+}
+
+body{
+	background: #b7b9bf;
+}
+
+.navegar{
+	background: #041C32;
+	border-bottom: 1.5px solid #818181;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+
+
+.navegar ul{
+	list-style: none;
+}
+
+.centrar{
+display: inline-block;
+width: 67%;
+}
+
+.menu{
+	text-align: right;
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+	width: 30%;
+}
+
+.menu > li > a{
+	color: #fff;
+	padding: 15px;
+	font-size: 21px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.menu > li > a:hover{
+	background: #062949;
+	transition: all .3s;
+}
+
+/*SubMenu*/
+
+.submenu{
+	width: 100%;
+	position: absolute;
+	background: #fff;
+	border-bottom: 1px solid #606060;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .10s;
+	z-index: 100;
+}
+
+.submenu li a{
+	color: #313131;
+	font-size: 18px;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+.submenu > li > a:hover{
+	background: #062949;
+	color: white;
+	transition: all .3s;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.logo{
+	text-decoration: none;
+	color: white;
+}
+
+.logo h2{
+	width: 30%;
+	text-align: center;
+	font-size: 25;
+	position: relative;
+	top: 2px;
+	display: inline-block;
+}
+
+
+/*segundo nav*/
+
+.segunav{
+	background: #242525;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	z-index: 90;
+}
+
+/*ul del segunodo nav*/
+.segunmenu{
+	text-align: center;
+}
+
+.segunmenu > li{
+	list-style: none;
+	display: inline-block;
+	width: 19%;
+	position: relative;
+}
+
+.segunmenu > li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 13px; 
+}
+
+.segunmenu > li a:hover{
+	background: #2F3131;
+	transition: all .3s;
+}
+
+/*submenu 2*/
+.submenu2{
+	width: 100%;
+	position: absolute;
+	color: #fff;
+	list-style: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .10s;
+	z-index: 100;
+}
+
+.submenu2 > li a{
+	text-decoration: none;
+	color: #fff;
+	background: #606060;
+	transition: all .3s;
+}
+
+.segunmenu li:hover .submenu2{
+	visibility: visible;
+	opacity: 1;
+}
+
+/*Main y article*/
+
+main{
+	width: 94%;
+	position: relative;
+	top: 80px;
+	left: 3%;
+}
+
+article{
+	background: #d2d6e1;/*b7b9bf*/
+	border-radius: 15px;
+	padding: 1%;
+	color: #313131;
+}
+
+.imgventas{
+	width: 24%;
+	background: white;
+	padding: 0.1%;
+	margin: 2px;
+	margin-bottom: 15px;
+	display: inline-block;
+	border-bottom: 2px solid #313131;
+	box-sizing: content-box;
+}
+
+.imgventas > img{
+	width: 100%;
+	height: auto;
+}
+
+.imgventas > p{
+	width: 100%;
+	padding-top: 5px;
+	text-align: left;
+	padding-left: 5px; 
+}
+
+p{
+    font.size: 100vh; /* For 100% screen height */
+}
+
+.invitar{
+	background: #313131;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.invitar a{
+	text-decoration: none;
+	color: white;
+}
+
+.unidor{
+	background: #99A799;
+	border-radius: 15px;
+}
+
+.buscador{
+	width: 50%;
+	height: auto;
+	position: relative;
+	left: 1%;
+}
+
+.buscar{
+	width: 80%;
+	height: 35px;
+	color: #313131;
+	padding: 3px;
+	padding-left: 10px;
+	margin: 5px;
+	border-style: none;
+	font-size: 16px;
+	outline: none;
+	display: inline-block;
+}
+
+.boton{
+	display: inline-block;
+	border-style: none;
+	padding: 8px;
+	font-size: 16px;
+	color: #313131;
+}
+
+.boton:hover{
+	cursor: pointer;
+}
+
+.boton:active{
+	padding: 7px;
+	font-size: 15px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+	.submenu{
+	word-wrap: break-word;
+}
+
+
+	.segunav{
+	margin-bottom: 15px;
+	margin-top: 20px;
+	word-wrap: break-word;
+}
+
+	.segunmenu > li{
+	width: 18%;
+}
+
+.segunmenu > li a{
+	padding: 10px;
+	font-size: 15px;
+}
+
+main{
+	width: 98%;
+	position: relative;
+	top: 80px;
+	left: 1%;
+}
+
+article{
+	background: #d2d6e1;/*b7b9bf*/
+	border-radius: 15px;
+	padding: 1%;
+	padding-top: 10%;
+	color: #313131;
+}
+
+p,a{
+	font-size: 20px;
+}
+
+.logo h2{
+	font-size: 22px;
+}
+
+.imgventas{
+	width: 98%;
+	margin-bottom: 8%;
+	padding-bottom: 5%;
+}
+
+.buscador{
+	width: 98%;
+	position: relative;
+	left: 1%;
+}
+
+.buscar{
+	width: 65%;
+	height: 35px;
+	padding: 1px;
+	padding-left: 20px;
+	margin: 8px;
+	margin-right: 3px;
+	font-size: 20px;
+}
+
+.boton{
+	padding: 7px;
+	font-size: 18px;
+}
+
+.boton:active{
+	padding: 6px;
+	font-size: 17px;
+}
+
+}
+
+/*word-wrap: break-word;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	white-space : normal;
+	overflow: scroll;*/
